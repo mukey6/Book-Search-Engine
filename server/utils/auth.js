@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const secret = 'mysecretsshhhhh';
+const secret = 'yeee';
 const expiration = '2h';
 
 module.exports = {
@@ -30,7 +30,6 @@ module.exports = {
       // decode and attach user data to request object
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
       req.user = data;
-      console.log('data', user)
     } catch {
       console.log('Invalid token');
     }

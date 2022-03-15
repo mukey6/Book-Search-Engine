@@ -35,7 +35,7 @@ mutation savedBooks($book: SavedBookInput){
       username
       email
       savedBooks {
-        bookID
+        bookId
         author
         title
         image
@@ -53,7 +53,7 @@ mutation savedBooks($book: SavedBookInput){
       _id
       username
       savedBooks {
-        bookID
+        bookId
         author
         title
         image
