@@ -12,7 +12,6 @@ export const QUERY_ME = gql`
       author
      description
         image
-        bookId
         title
     }
   }
