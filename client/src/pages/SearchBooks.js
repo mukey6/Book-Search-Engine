@@ -77,17 +77,7 @@ const SearchBooks = () => {
     try {
       // ??
       await savedBook({
-        variables: { book: bookToSave },
-        // update: (cache) => {
-        //   const me = cache.readQuery({ query: QUERY_ME });
-        //   // console.log(me, )
-        //   cache.writeQuery({
-        //     query: QUERY_ME,
-        //     data: { me: { ...me, savedBooks: [...me.savedBooks, bookToSave] } },
-        //   });
-        //   console.log('saved boooook',savedBook)
-
-        // },
+        variables: { book: bookToSave }
       });
 
       // if book successfully saves to user's account, save book id to state
