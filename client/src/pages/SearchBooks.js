@@ -10,7 +10,6 @@ import {
 } from "react-bootstrap";
 import { SAVE_BOOK } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
-import { QUERY_ME } from "../utils/queries";
 import Auth from "../utils/auth";
 import { searchGoogleBooks } from "../utils/API";
 import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
